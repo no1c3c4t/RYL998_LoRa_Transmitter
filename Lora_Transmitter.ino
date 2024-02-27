@@ -1,7 +1,7 @@
-#include <SoftwareSerial.h>  // Include the SoftwareSerial library for serial communication on other digital pins
+#include <SoftwareSerial.h>  // 
 
-#define LORA_TX   18         // TX pin is connected to Arduino pin 18
-#define LORA_RX   19         // RX pin is connected to Arduino pin 19
+#define LORA_TX   18         // TX pin  18
+#define LORA_RX   19         // RX pin  19
 
 // Initialize software serial
 SoftwareSerial LoRaSerial(LORA_RX, LORA_TX); // RX, TX
@@ -10,7 +10,7 @@ void setup() {
   // Open serial communications and wait for port to open:
   Serial.begin(115200);
   while (!Serial) {
-    ; // wait for serial port to connect. Needed for native USB port only
+    ; // wait for serial port to connect.
   }
 
   // Set the data rate for the SoftwareSerial port
@@ -20,6 +20,6 @@ void setup() {
 
 void loop() { // run over and over
   Serial.println("Sending 'Thoughts and Prayers'...");
-  LoRaSerial.println("XxMeowxX uWu");  // Send a message
+  LoRaSerial.println("XxMeowxX uWu");  // Feel free to send a diffrent message
   delay(5000);  // Wait for 5 seconds
 }
