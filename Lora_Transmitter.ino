@@ -1,7 +1,7 @@
 #include <SoftwareSerial.h>  // 
 
-#define LORA_TX   18         // TX pin  18
-#define LORA_RX   19         // RX pin  19
+#define LORA_TX   15         // TX pin  18
+#define LORA_RX   17         // RX pin  19
 
 // Initialize software serial
 SoftwareSerial LoRaSerial(LORA_RX, LORA_TX); // RX, TX
